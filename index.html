@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Willmar de Jesus Gonzalez Cadena - Portafolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #3f87a6, #153259);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      background: #222;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #153259;
+    }
+    .skills div, .project-card {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-left: 5px solid #3f87a6;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .contact-info p, .contact-info a {
+      margin: 8px 0;
+      color: #153259;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #3f87a6;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Willmar de Jesus Gonzalez Cadena</h1>
+    <p>Desarrollador Web & Programador Full Stack</p>
+  </header>
+
+  <nav>
+    <a href="#about">Acerca de mí</a>
+    <a href="#skills">Habilidades</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+
+  <section id="about">
+    <h2>Acerca de mí</h2>
+    <p>Soy Willmar de Jesus Gonzalez Cadena, apasionado por el desarrollo de software y las tecnologías web. Tengo experiencia en diseño y programación de aplicaciones tanto del lado del cliente como del servidor. Me interesa la innovación, el trabajo en equipo y la mejora continua.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <div>✔ HTML, CSS y JavaScript</div>
+      <div>✔ Frameworks: React, Vue.js, Angular</div>
+      <div>✔ Backend: Node.js, Express, PHP, MySQL</div>
+      <div>✔ Herramientas: Git, GitHub, Docker</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Proyectos</h2>
+    <div class="project-card">
+      <strong>Gestor de Tareas</strong>
+      <p>App web para gestionar tareas con autenticación y CRUD.</p>
+      <p><em>Tecnologías:</em> React, Firebase</p>
+      <a href="#">Ver en GitHub</a>
+    </div>
+    <div class="project-card">
+      <strong>Sitio de Noticias</strong>
+      <p>Portal de noticias con consumo de API en tiempo real.</p>
+      <p><em>Tecnologías:</em> Vue.js, TailwindCSS, NewsAPI</p>
+      <a href="#">Ver en GitHub</a>
+    </div>
+    <div class="project-card">
+      <strong>API REST para Productos</strong>
+      <p>API desarrollada en Node.js para gestión de productos.</p>
+      <p><em>Tecnologías:</em> Node.js, Express, MongoDB</p>
+      <a href="#">Ver en GitHub</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> willmar.dev@example.com</p>
+      <p><strong>Teléfono:</strong> +57 300 000 0000</p>
+      <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/willmar</a></p>
+      <p><strong>GitHub:</strong> <a href="#">github.com/willmar</a></p>
+    </div>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu correo" required />
+      <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</body>
+</html>
