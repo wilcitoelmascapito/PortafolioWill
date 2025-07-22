@@ -2,153 +2,100 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Willmar de Jesus Gonzalez Cadena - Portafolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
-    body {
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(to right, #3f87a6, #153259);
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    nav {
-      background: #222;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      margin-bottom: 20px;
-      color: #153259;
-    }
-    .skills div, .project-card {
-      background: #fff;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-left: 5px solid #3f87a6;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .contact-info p, .contact-info a {
-      margin: 8px 0;
-      color: #153259;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-    }
-    form button {
-      background: #3f87a6;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Willmar Gonzalez | Portafolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
+
+  <!-- Navegación -->
   <header>
-    <h1>Willmar de Jesus Gonzalez Cadena</h1>
-    <p>Desarrollador Web & Programador Full Stack</p>
+    <nav>
+      <h1>Willmar G.</h1>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#acerca">Acerca de mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">Acerca de mí</a>
-    <a href="#skills">Habilidades</a>
-    <a href="#projects">Proyectos</a>
-    <a href="#contact">Contacto</a>
-  </nav>
+  <!-- INICIO -->
+  <section id="inicio" class="section inicio">
+    <div class="content">
+      <h2>Willmar de Jesus Gonzalez Cadena</h2>
+      <p>Programador apasionado por crear soluciones innovadoras con tecnología.</p>
+    </div>
+  </section>
 
-  <section id="about">
+  <!-- ACERCA DE MÍ -->
+  <section id="acerca" class="section">
     <h2>Acerca de mí</h2>
-    <p>Soy Willmar de Jesus Gonzalez Cadena, apasionado por el desarrollo de software y las tecnologías web. Tengo experiencia en diseño y programación de aplicaciones tanto del lado del cliente como del servidor. Me interesa la innovación, el trabajo en equipo y la mejora continua.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Habilidades</h2>
-    <div class="skills">
-      <div>✔ HTML, CSS y JavaScript</div>
-      <div>✔ Frameworks: React, Vue.js, Angular</div>
-      <div>✔ Backend: Node.js, Express, PHP, MySQL</div>
-      <div>✔ Herramientas: Git, GitHub, Docker</div>
+    <div class="acerca-container">
+      <img src="img/willmar.jpg" alt="Foto de Willmar">
+      <p>
+        Soy Willmar, un programador colombiano con experiencia en desarrollo web y software. Me apasiona construir aplicaciones que impacten positivamente a los usuarios. Me especializo en tecnologías modernas y siempre estoy aprendiendo algo nuevo.
+      </p>
     </div>
   </section>
 
-  <section id="projects">
-    <h2>Proyectos</h2>
-    <div class="project-card">
-      <strong>Gestor de Tareas</strong>
-      <p>App web para gestionar tareas con autenticación y CRUD.</p>
-      <p><em>Tecnologías:</em> React, Firebase</p>
-      <a href="#">Ver en GitHub</a>
-    </div>
-    <div class="project-card">
-      <strong>Sitio de Noticias</strong>
-      <p>Portal de noticias con consumo de API en tiempo real.</p>
-      <p><em>Tecnologías:</em> Vue.js, TailwindCSS, NewsAPI</p>
-      <a href="#">Ver en GitHub</a>
-    </div>
-    <div class="project-card">
-      <strong>API REST para Productos</strong>
-      <p>API desarrollada en Node.js para gestión de productos.</p>
-      <p><em>Tecnologías:</em> Node.js, Express, MongoDB</p>
-      <a href="#">Ver en GitHub</a>
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="section">
+    <h2>Habilidades Técnicas</h2>
+    <div class="habilidades-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Firebase</div>
     </div>
   </section>
 
-  <section id="contact">
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="section">
+    <h2>Proyectos Destacados</h2>
+    <div class="proyectos-container">
+      <div class="proyecto">
+        <h3>Gestor de Tareas</h3>
+        <p>App web para gestionar tareas y proyectos en equipo.</p>
+        <small>Tecnologías: React, Firebase</small><br/>
+        <a href="#">Ver en GitHub</a>
+      </div>
+      <div class="proyecto">
+        <h3>Portafolio Personal</h3>
+        <p>Sitio web responsivo para mostrar experiencia y proyectos.</p>
+        <small>Tecnologías: HTML, CSS, JS</small><br/>
+        <a href="#">Ver en GitHub</a>
+      </div>
+      <div class="proyecto">
+        <h3>API de Productos</h3>
+        <p>API RESTful para manejo de productos en una tienda virtual.</p>
+        <small>Tecnologías: Node.js, Express, MongoDB</small><br/>
+        <a href="#">Ver en GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section">
     <h2>Contacto</h2>
-    <div class="contact-info">
-      <p><strong>Email:</strong> willmar.dev@example.com</p>
-      <p><strong>Teléfono:</strong> +57 300 000 0000</p>
-      <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/willmar</a></p>
-      <p><strong>GitHub:</strong> <a href="#">github.com/willmar</a></p>
-    </div>
-    <form action="#" method="POST">
-      <input type="text" name="name" placeholder="Tu nombre" required />
-      <input type="email" name="email" placeholder="Tu correo" required />
-      <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+    <p>¿Quieres trabajar conmigo? ¡Hablemos!</p>
+    <ul class="contacto-info">
+      <li>Email: willmar.gonzalez@example.com</li>
+      <li>Teléfono: +57 300 123 4567</li>
+      <li><a href="#">LinkedIn</a> | <a href="#">GitHub</a></li>
+    </ul>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Willmar de Jesus Gonzalez Cadena</p>
+  </footer>
+
 </body>
 </html>
